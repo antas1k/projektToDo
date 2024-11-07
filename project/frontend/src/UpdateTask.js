@@ -10,7 +10,7 @@ export function UpdateTask(){
 
     function handleSubmit(event){
         event.preventDefault();
-        axios.put("http://localhost:8000/update/"+id, {task, desc})
+        axios.put("http://localhost:8000/home/update/"+id, {task, desc})
         .then(res=>{
             //console.log(res)
             navigate('/home')
