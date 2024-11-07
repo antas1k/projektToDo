@@ -81,7 +81,7 @@ app.post('/create', (req, res) => {
     });
 });
 
-app.put('/update/:id', (req, res) => {
+app.put('/home/update/:id', (req, res) => {
     const sql = "UPDATE tasks SET task_name = ?, task_desc = ? WHERE task_id = ?";
     const values = [req.body.task, req.body.desc];
     const id = req.params.id
