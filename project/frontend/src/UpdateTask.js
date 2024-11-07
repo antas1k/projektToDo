@@ -13,7 +13,7 @@ export function UpdateTask(){
         axios.put("http://localhost:8000/update/"+id, {task, desc})
         .then(res=>{
             //console.log(res)
-            navigate('/')
+            navigate('/home')
         })
         .catch(err=>console.log(err))
     }
