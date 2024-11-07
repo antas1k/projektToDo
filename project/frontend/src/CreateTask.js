@@ -12,7 +12,7 @@ export function CreateTask(){
         axios.post("http://localhost:8000/create", {task, desc})
         .then(res=>{
             console.log(res)
-            navigate('/')
+            navigate('/home')
         })
         .catch(err=>console.log(err))
     }
